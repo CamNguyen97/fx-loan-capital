@@ -3128,11 +3128,12 @@ background-image: url('thumb.png') !important;
     background-image: url("https://uploads-ssl.webflow.com/61a79d9b1083e6154cf225c6/623b5555a09ba01747f5ab83_Screen%20Shot%202022-02-21%20at%203.00.56%20PM.png");
   }
 }
+// .wrapper {
+//   padding-top: 145px;
+// }
 
 @media screen and (max-width: 767px) {
-  .wrapper {
-    padding-top: 145px;
-  }
+  
   h1 {
     font-size: 36px;
   }
