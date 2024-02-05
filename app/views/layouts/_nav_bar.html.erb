@@ -1,0 +1,37 @@
+<nav class="navbar fixed-top bg-primary-color">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <%= image_tag('logo.png', width: 135, alt: '', class: 'image-3') %>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-primary-color" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          <%= image_tag('logo.png', width: 135, alt: '', class: 'image-3') %>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <%= link_to "Home", root_path, class: "nav-link text-capitalize #{'active' if request.path == '/'}", aria_current: (request.path == '/' ? 'page' : nil) %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About", about_path, class: "nav-link text-capitalize #{'active' if request.path == '/about'}" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Solutions", solutions_path, class: "nav-link text-capitalize #{'active' if request.path == '/solutions'}" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Criteria", criteria_path, class: "nav-link text-capitalize #{'active' if request.path == '/criteria'}" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Contact", contact_path, class: "nav-link text-capitalize #{'active' if request.path == '/contact'}" %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
