@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'solutions', to: 'pages#solutions'
   get 'criteria', to: 'pages#criteria'
-  get 'contact', to: 'pages#contact'
+  # get 'contact', to: 'pages#contact'
 end
